@@ -119,7 +119,7 @@ int main(void)
   MX_TIM16_Init();
   MX_TIM17_Init();
   /* USER CODE BEGIN 2 */
-
+  main_app();
   /* USER CODE END 2 */
 
   /* Infinite loop */

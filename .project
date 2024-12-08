@@ -30,4 +30,11 @@
 		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
 		<nature>org.eclipse.cdt.core.ccnature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>Sources</name>
+			<type>2</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Sources</locationURI>
+		</link>
+	</linkedResources>
 </projectDescription>
