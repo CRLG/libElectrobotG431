@@ -74,8 +74,8 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define Mot2_Sens1_Pin GPIO_PIN_1
-#define Mot2_Sens1_GPIO_Port GPIOF
+#define Eana4_Pin GPIO_PIN_1
+#define Eana4_GPIO_Port GPIOF
 #define Eana1_Pin GPIO_PIN_0
 #define Eana1_GPIO_Port GPIOA
 #define Codeur1_B_Pin GPIO_PIN_1
@@ -92,10 +92,10 @@ void Error_Handler(void);
 #define Eana3_GPIO_Port GPIOA
 #define Mot1_Sens2_Pin GPIO_PIN_7
 #define Mot1_Sens2_GPIO_Port GPIOA
-#define Mot1_Sens1_Pin GPIO_PIN_0
-#define Mot1_Sens1_GPIO_Port GPIOB
-#define Mot2_Sens2_Pin GPIO_PIN_8
-#define Mot2_Sens2_GPIO_Port GPIOA
+#define Mot2_Sens1_Pin GPIO_PIN_0
+#define Mot2_Sens1_GPIO_Port GPIOB
+#define Servo3_PWM_Pin GPIO_PIN_8
+#define Servo3_PWM_GPIO_Port GPIOA
 #define Servo1_PWM_Pin GPIO_PIN_10
 #define Servo1_PWM_GPIO_Port GPIOA
 #define Servo2_PWM_Pin GPIO_PIN_11
@@ -106,8 +106,8 @@ void Error_Handler(void);
 #define T_SWDIO_GPIO_Port GPIOA
 #define T_SWCLK_Pin GPIO_PIN_14
 #define T_SWCLK_GPIO_Port GPIOA
-#define Forced_AnalogInput_Pin GPIO_PIN_15
-#define Forced_AnalogInput_GPIO_Port GPIOA
+#define Mot1_Sens1_Pin GPIO_PIN_15
+#define Mot1_Sens1_GPIO_Port GPIOA
 #define T_SWO_Pin GPIO_PIN_3
 #define T_SWO_GPIO_Port GPIOB
 #define Codeur2_A_Pin GPIO_PIN_4
@@ -116,6 +116,8 @@ void Error_Handler(void);
 #define Codeur2_B_GPIO_Port GPIOB
 #define Mot1_PWM_Pin GPIO_PIN_6
 #define Mot1_PWM_GPIO_Port GPIOB
+#define Mot2_Sens2_Pin GPIO_PIN_7
+#define Mot2_Sens2_GPIO_Port GPIOB
 #define LD2_Pin GPIO_PIN_8
 #define LD2_GPIO_Port GPIOB
 

@@ -398,6 +398,10 @@ static void MX_TIM1_Init(void)
   sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
   sConfigOC.OCIdleState = TIM_OCIDLESTATE_RESET;
   sConfigOC.OCNIdleState = TIM_OCNIDLESTATE_RESET;
+  if (HAL_TIM_PWM_ConfigChannel(&htim1, &sConfigOC, TIM_CHANNEL_1) != HAL_OK)
+  {
+    Error_Handler();
+  }
   if (HAL_TIM_PWM_ConfigChannel(&htim1, &sConfigOC, TIM_CHANNEL_3) != HAL_OK)
   {
     Error_Handler();
@@ -712,40 +716,24 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(Mot2_Sens1_GPIO_Port, Mot2_Sens1_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOA, Mot1_Sens2_Pin|Mot1_Sens1_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, Mot1_Sens2_Pin|Mot2_Sens2_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOB, Mot2_Sens1_Pin|Mot2_Sens2_Pin|LD2_Pin, GPIO_PIN_RESET);
 
-  /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, Mot1_Sens1_Pin|LD2_Pin, GPIO_PIN_RESET);
-
-  /*Configure GPIO pin : Mot2_Sens1_Pin */
-  GPIO_InitStruct.Pin = Mot2_Sens1_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(Mot2_Sens1_GPIO_Port, &GPIO_InitStruct);
-
-  /*Configure GPIO pins : Mot1_Sens2_Pin Mot2_Sens2_Pin */
-  GPIO_InitStruct.Pin = Mot1_Sens2_Pin|Mot2_Sens2_Pin;
+  /*Configure GPIO pins : Mot1_Sens2_Pin Mot1_Sens1_Pin */
+  GPIO_InitStruct.Pin = Mot1_Sens2_Pin|Mot1_Sens1_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : Mot1_Sens1_Pin LD2_Pin */
-  GPIO_InitStruct.Pin = Mot1_Sens1_Pin|LD2_Pin;
+  /*Configure GPIO pins : Mot2_Sens1_Pin Mot2_Sens2_Pin LD2_Pin */
+  GPIO_InitStruct.Pin = Mot2_Sens1_Pin|Mot2_Sens2_Pin|LD2_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
-
-  /*Configure GPIO pin : Forced_AnalogInput_Pin */
-  GPIO_InitStruct.Pin = Forced_AnalogInput_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(Forced_AnalogInput_GPIO_Port, &GPIO_InitStruct);
 
 /* USER CODE BEGIN MX_GPIO_Init_2 */
 /* USER CODE END MX_GPIO_Init_2 */

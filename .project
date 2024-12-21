@@ -32,9 +32,24 @@
 	</natures>
 	<linkedResources>
 		<link>
+			<name>ConsoleInteractiveMenu</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
 			<name>Sources</name>
 			<type>2</type>
 			<locationURI>PARENT-2-PROJECT_LOC/Sources</locationURI>
+		</link>
+		<link>
+			<name>ConsoleInteractiveMenu/console_interaction.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/CppRobLib/ConsoleInteractiveMenu/console_interaction.cpp</locationURI>
+		</link>
+		<link>
+			<name>ConsoleInteractiveMenu/console_interaction.h</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/CppRobLib/ConsoleInteractiveMenu/console_interaction.h</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>
