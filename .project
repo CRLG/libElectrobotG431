@@ -39,7 +39,7 @@
 		<link>
 			<name>Sources</name>
 			<type>2</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Sources</locationURI>
+			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
 			<name>ConsoleInteractiveMenu/console_interaction.cpp</name>
@@ -50,6 +50,41 @@
 			<name>ConsoleInteractiveMenu/console_interaction.h</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/CppRobLib/ConsoleInteractiveMenu/console_interaction.h</locationURI>
+		</link>
+		<link>
+			<name>Sources/CGlobale.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Sources/CGlobale.cpp</locationURI>
+		</link>
+		<link>
+			<name>Sources/CGlobale_ModeAutonome.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Sources/CGlobale_ModeAutonome.cpp</locationURI>
+		</link>
+		<link>
+			<name>Sources/CGlobale_ModePiloteLaBotBox.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Sources/CGlobale_ModePiloteLaBotBox.cpp</locationURI>
+		</link>
+		<link>
+			<name>Sources/CGlobale_ModePiloteTerminal.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Sources/CGlobale_ModePiloteTerminal.cpp</locationURI>
+		</link>
+		<link>
+			<name>Sources/RessourcesHardware.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Sources/RessourcesHardware.cpp</locationURI>
+		</link>
+		<link>
+			<name>Sources/console_interactive_menu.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Sources/console_interactive_menu.cpp</locationURI>
+		</link>
+		<link>
+			<name>Sources/main_app.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Sources/main_app.cpp</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>
